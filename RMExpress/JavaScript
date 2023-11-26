@@ -1,0 +1,19 @@
+// main.js
+
+// Función para inicializar el mapa
+function initMap() {
+    // Coordenadas del centro del mapa
+    var centroMapa = { lat: -34.397, lng: 150.644 };
+
+    // Crear un nuevo mapa en el contenedor con id "mapa"
+    var mapa = new google.maps.Map(document.getElementById('mapa'), {
+        zoom: 8, // Nivel de zoom
+        center: centroMapa // Centro del mapa
+    });
+
+    // Marcar la ubicación en el mapa
+    var marcador = new google.maps.Marker({
+        position: centroMapa,
+        map: mapa,
+        title: 'Ubicación de Envío'
+    });
