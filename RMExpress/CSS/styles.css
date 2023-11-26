@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: darkorange;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/hero.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #f90a0a;
+    background-color: #067cf9; /* Fondo azul  */
+}
+
+/* Estilos del encabezado (header) */
+header {
+    background-color: #007bff; /* Azul */
+    padding: 2% 0; /* Padding proporcional */
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #f50a0a; /* Texto blanco */
+}
+
+/* Estilos de la barra de navegación */
+nav {
+    background-color: #343a40; /* Fondo gris oscuro */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaciado entre elementos */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* Texto blanco */
+    font-weight: bold;
+    text-transform: uppercase; /* Texto en mayúsculas */
+    transition: color 0.3s ease-in-out; /* Transición de color suave */
+}
+
+nav a:hover {
+    color: #f90; /* Naranja al pasar el ratón */
+}
+
+/* Estilos de las secciones */
+.section {
+    padding: 40px 0;
+}
+
+.section h2 {
+    color: #007bff; /* Azul */
+}
+
+/* Estilos del formulario de contacto */
+form {
+    max-width: 100%; /* Ancho máximo para ser completamente responsive */
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Texto negro */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Transición de color suave */
+}
+
+form button:hover {
+    background-color: #f90; /* Naranja al pasar el ratón */
+}
+
+/* Estilos del carrusel de Bootstrap */
+#miCarrusel {
+    margin-top: 40px;
+}
+
+/* Estilos específicos para las imágenes del carrusel */
+#miCarrusel img {
+    border-radius: 5px; /* Esquinas redondeadas */
+    max-width: 100%; /* Ancho máximo del contenedor */
+    height: auto; /* Altura automática para mantener la proporción original */
+}
+
+
